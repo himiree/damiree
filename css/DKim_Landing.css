@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+*{
+    word-break: keep-all;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'galano_grotesqueregular';
+    src: url('galanogrotesqueregular-webfont.woff2') format('woff2'),
+         url('galanogrotesqueregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'galano_grotesqueitalic';
+    src: url('galanogrotesqueitalic-webfont.woff2') format('woff2'),
+         url('galanogrotesqueitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'galano_grotesquelight';
+    src: url('galanogrotesquelight-webfont.woff2') format('woff2'),
+         url('galanogrotesquelight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'galano_grotesquemedium';
+    src: url('galanogrotesquemedium-webfont.woff2') format('woff2'),
+         url('galanogrotesquemedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'pretendardregular';
+    src: url('pretendard-regular-webfont.woff2') format('woff2'),
+         url('pretendard-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: "Ortica-Light";
+  src: url("Ortica-Light.woff2") format("woff2"),
+       url("Ortica-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ortica-Bold";
+  src: url("Ortica-Bold.woff2") format("woff2"),
+       url("Ortica-Bold.woff") format("woff");
+}
+
+
+/* start */
+
+body {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+/* -------------- Landing  -------------- */
+
+/* -----
+video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+} ---- */
+
+.landing_show{
+    margin: 5% 0% 0% 0%;
+}
+
+#slideshow {
+  overflow: hidden;
+  width: 900px;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 3600px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  width: 900px;
+  height: 560px;
+}
+
+.slide:nth-child(1) {
+  background: #D93B65;
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -900px;}
+  50% {margin-left: -900px;}
+  60% {margin-left: -1800px;}
+  70% {margin-left: -1800px;}
+  80% {margin-left: -2700px;}
+  90% {margin-left: -2700px;}
+}
+
+
+.rights{
+    position: absolute;
+    bottom: 5%;
+    left:40%;
+    font-family: 'galano_grotesquelight','pretendardregular',serif;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+video {
+  position: absolute;
+  z-index: -1;
+  width: 60%;
+}
+
+.invitation_scroll{
+    position: absolute;
+    left: 21.4%;
+    top: 24%;
+    background: #1d1d1d;
+}
+
+.invitation_scroll a{
+    font-family: 'galano_grotesquemedium','pretendardregular',serif;
+    font-size: 2vw;
+    color: white;
+}
+
+.invitation_scroll a:hover{
+    font-family: 'galano_grotesquemedium','pretendardregular',serif;
+    font-style: italic;
+    font-weight: normal;
+    background-image: linear-gradient(#ffffff 67%, #aaffbb 33%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.header_name{
+    height:40px;
+    margin: 2.31%;
+    margin-bottom: 1.8%;
+    font-family: 'galano_grotesquemedium',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size:32px;
+}
+
+.name h1{
+    font-size:32px;
+}
+
+.name{
+    float: left;
+    width: 20%;
+}
+
+.name a{
+    color:white;
+    text-decoration: none;
+}
+
+.linkset1{
+    float: left;
+    width: 20%;
+}
+
+.linkset1 h2,
+.linkset1 a,
+.linkset2 h2,
+.linkset2 a{
+    font-family: 'galano_grotesquelight';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px; 
+    color: white;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+.linkset1 a:hover {
+    color: #ADB5FF;
+}
+
+.linkset2 a:hover{
+    color: #ADB5FF;
+}
+
+.contact{
+    float: left;
+    width:20%;
+}
+
+.linkset2{
+    float: right;
+    width:20%;
+}
+
+.contact a{
+    color:white;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: #AAFFBB;
+}
+
+
+
+
+
+
+/* -------------- phone device  -------------- */
+
+
+@media screen and (max-width: 600px) {
+    
+    .name{width:70%;}
+    .contact{
+        width: 30%;
+    }
+    
+    .contact{
+        float: none;
+    }
+    
+    .contact a{
+    font-size: 20px;
+}
+    
+    .header_name{
+        height: auto;
+    }
+    
+    #slideshow {   
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 18px;
+    }
+    
+    .linkedin {
+        float:right;
+    }
+    
+    .contact {
+        margin-top:8px;
+        margin-bottom: 40px;
+    }
+    
+    
+}

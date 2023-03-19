@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+*{
+    word-break: keep-all;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'galano_grotesqueregular';
+    src: url('galanogrotesqueregular-webfont.woff2') format('woff2'),
+         url('galanogrotesqueregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'galano_grotesqueitalic';
+    src: url('galanogrotesqueitalic-webfont.woff2') format('woff2'),
+         url('galanogrotesqueitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'galano_grotesquelight';
+    src: url('galanogrotesquelight-webfont.woff2') format('woff2'),
+         url('galanogrotesquelight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'galano_grotesquemedium';
+    src: url('galanogrotesquemedium-webfont.woff2') format('woff2'),
+         url('galanogrotesquemedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: "Ortica-Light";
+  src: url("Ortica-Light.woff2") format("woff2"),
+       url("Ortica-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ortica-Bold";
+  src: url("Ortica-Bold.woff2") format("woff2"),
+       url("Ortica-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'pretendardregular';
+    src: url('pretendard-regular-webfont.woff2') format('woff2'),
+         url('pretendard-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('Eulyoo1945-Regular.woff2') format('woff2'),
+         url('Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* start */
+
+/* -------------- header -------------- */
+
+body {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.header_name{
+    height: 260px;
+    margin: 2.31%;
+    -bottom: 1.8%;
+    font-family: 'galano_grotesqueregular',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size:32px;
+}
+
+.name{
+    font-family: 'galano_grotesquemedium',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    float: left;
+    width: 40%;
+    height:100px;
+    line-height: 1.5em;
+}
+
+.contact{
+    float:left;
+    font-family: 'galano_grotesquemedium',sans-serif;
+    width:50%;
+    line-height: 1.5em;
+}
+
+.linkset1{
+    position: absolute;
+    right: 2.31%;
+    width: 10%;
+    font-family: 'galano_grotesquelight';
+}
+
+.linkset1 a{
+    font-size: 15px; 
+    line-height: 1.3em;
+}
+
+.navigator{
+    float: left;
+    width: 50%;
+    font-family: 'galano_grotesqueregular',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.name a,
+.navigator a,
+.contact a,
+.linkset1 a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.contact a:hover{
+    font-family: 'galano_grotesquemedium',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #aaffbb;
+}
+
+.navigator a:hover{
+    font-family: 'galano_grotesquemedium',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-image: linear-gradient(#ffffff 67%, #aaffbb 33%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.linkset1 a:hover {
+    color: #ADB5FF;
+}
+
+/* -------------- Moving text -------------- */
+
+.moving_text{
+    font-family: 'galano_grotesqueregular',sans-serif;
+    font-size: 16px;
+}
+
+/* -------------- work-list  -------------- */
+
+
+.work_list{
+    display: inline-block;
+    margin: 0 16% 8% 16%;
+    padding-top: 0%;
+}
+
+.work_unit{
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+
+img{
+    max-width:100%;
+    overflow: hidden;
+}
+
+
+.work_unit h4{
+    color: #bcbcbc;
+    font-family: 'galano_grotesqueregular','pretendardregular',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+    font-size: 13px;
+    padding: 4px 0px 20px 4px;
+}
+
+
+.show span{
+    font-family: "galano_grotesquelight",'pretendardregular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6vw;
+}
+
+/* -------------- work-detail-page  -------------- */
+
+.work_detail_page{
+    padding: 0% 20% 11.77% 20%;
+    background-color: #fff;
+    font-family: 'galano_grotesqueregular','pretendardregular',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.work_title{
+    color: black;
+    font-family: 'galano_grotesquemedium','pretendardregular',sans-serif;
+    font-size: 3vw;
+    padding: 11.77% 0 4% 0;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.work_title span{
+    font-size: 14px;
+    color: #bbbbbb;
+    font-family: 'galano_grotesquelight','pretendardregular',sans-serif;
+    line-height: 1.8em;
+}
+
+.work_info h3{
+    color: black;
+    font-size: 13px;
+    font-family: 'galano_grotesquemedium','pretendardregular',sans-serif;
+    line-height: 1.5em;
+    display: inline-block;
+    width:31%;
+    margin-right:2%;
+    padding-top:2%;
+
+}
+    
+.work_info h4{
+    color: black;
+    vertical-align: top;
+    font-size: 13px;
+    font-family: 'galano_grotesquelight','pretendardregular',sans-serif;
+    line-height: 1.5em;
+    display: inline-block;
+    width:31%;
+    margin-right:2%;
+    margin-bottom: 4%;
+}
+
+.work_main{
+    display: block;
+    font-size: 14px;
+    font-family: 'galano_grotesquelight','pretendardregular',sans-serif;
+    line-height: 1.3em;
+}
+
+
+
+img{
+    min-width: 100%;
+}
+
+.rights{
+    font-family: 'galano_grotesquelight','pretendardregular',serif;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+/* -------------- phone device  -------------- */
+
+
+@media screen and (max-width: 600px) {
+    
+    .name,
+    .navigator,
+    .contact,
+    .linkset1{
+        width: 100%;
+        display: block;
+        float:left;
+        height:auto;
+    }
+    
+    .work_list{
+        float: none;
+        margin: 0%;
+    }
+    
+    .work_unit{
+    width: 100%;
+    margin-right: 1%;
+}
+    .work_title{
+    font-size: 5vw;
+    }
+    
